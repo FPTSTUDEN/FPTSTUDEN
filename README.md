@@ -1,5 +1,5 @@
 ![profile-banner](./banner.jpg)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3a5aaf66-f3aa-4dc2-870f-811e49626c77/deploy-status)](https://app.netlify.com/projects/generatedate/deploys)
 # Hi 👋 I'm Harry
 
 <img align="right" src="https://generatedate.netlify.app/date-image.png" alt="my-styled-calendar" height="300" width="300"/>
@@ -7,7 +7,7 @@
 
 - 💬 Ask me about **Self-hosting** ＼(ﾟｰﾟ＼)
 
-- The thing on the right is a CI/CD-updated Chinese calendar lol
+> The thing on the right is my Netlify CI/CD-updated Chinese calendar lol
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

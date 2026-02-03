@@ -30,9 +30,9 @@ jobs:
         run: |
           python scripts/generate_date.py
           # Your script should output to public/date-image.png
-          mkdir -p public
+          # mkdir -p public
           # Move your generated image to public folder
-          mv date-image.png public/date-image.png
+          # mv date-image.png public/date-image.png
           
       - name: Create Netlify config
         run: |

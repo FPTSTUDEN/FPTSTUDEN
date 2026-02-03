@@ -1,0 +1,9 @@
+<h1> Time display test </h1>
+<p id="time"></p>
+<p id="live-time"></p>
+<script>
+  document.getElementById('time').innerText = new Date().toLocaleTimeString();
+  // setInterval(() => {
+  //   document.getElementById('live-time').innerText = new Date().toLocaleTimeString();
+  // }, 1000);
+</script>
