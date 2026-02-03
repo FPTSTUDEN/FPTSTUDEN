@@ -1,8 +1,13 @@
+![profile-banner](./banner.jpg)
+
 # Hi 👋 I'm Harry
 
+<img align="right" src="https://generatedate.netlify.app/date-image.png" alt="my-styled-calendar" height="300" width="300"/>
 - 🌱 I'm currently learning **IaC, CI/CD and event queueing**
 
-- 💬 Ask me about **Self-hosting** lol
+- 💬 Ask me about **Self-hosting** ＼(ﾟｰﾟ＼)
+
+- The thing on the right is a CI/CD-updated Chinese calendar lol
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

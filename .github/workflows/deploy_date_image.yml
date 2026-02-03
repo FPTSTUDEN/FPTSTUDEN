@@ -1,0 +1,65 @@
+name: Generate and Deploy Date Image
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate_date.py'
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: |
+          pip install pillow
+          
+      - name: Generate date image
+        run: |
+          python scripts/generate_date.py
+          # Your script should output to public/date-image.png
+          mkdir -p public
+          # Move your generated image to public folder
+          mv date-image.png public/date-image.png
+          
+      - name: Create Netlify config
+        run: |
+          cat > netlify.toml << EOF
+          [build]
+            publish = "public"
+            
+          [[redirects]]
+            from = "/date-badge.png"
+            to = "/date-image.png"
+            status = 200
+            
+          [[headers]]
+            for = "/date-image.png"
+            [headers.values]
+              Cache-Control = "public, max-age=3600"
+          EOF
+          
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2.0
+        with:
+          publish-dir: './public'
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Update date: $(date +'%Y-%m-%d %H:%M')"
+          enable-pull-request-comment: false
+          enable-commit-comment: false
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
