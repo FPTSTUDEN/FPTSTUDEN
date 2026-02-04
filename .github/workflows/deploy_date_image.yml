@@ -2,7 +2,7 @@ name: Generate and Deploy Date Image
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours
+    - cron: '0 0 * * *'  # Every 6 hours
   workflow_dispatch:
   push:
     branches: [main]
