@@ -2,12 +2,14 @@ name: Generate and Deploy Date Image v2
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Every 6 hours
-  workflow_dispatch:
+    # Every 6 hours
+    - cron: '0 0 * * *'
   push:
     branches: [main]
     paths:
+      - '.github/workflows/deploy_date_image_v2.yml'
       - 'scripts/generate_date.py'
+  workflow_dispatch:
 
 jobs:
   generate-and-deploy:
@@ -44,9 +46,7 @@ jobs:
           
       - name: Add and amend commit
         run: |
-          # Check if date-image.png exists
-          if [ -f "date-image.png" ]; then
-            git add date-image.png
+            git add public/date-image.png
             
             # Check if we have any commits in this branch
             if git rev-parse --verify HEAD >/dev/null 2>&1; then
@@ -59,7 +59,3 @@ jobs:
               git commit -m "Add date image"
               git push
             fi
-          else
-            echo "No date image generated"
-            exit 1
-          fi
