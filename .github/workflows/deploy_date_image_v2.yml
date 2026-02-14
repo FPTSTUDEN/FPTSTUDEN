@@ -14,6 +14,8 @@ on:
 jobs:
   generate-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Checkout
@@ -21,6 +23,7 @@ jobs:
         with:
           fetch-depth: 0  # Fetch all history for amend to work
           token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
         
       - name: Setup Python
         uses: actions/setup-python@v5
