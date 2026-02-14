@@ -1,4 +1,4 @@
-name: Generate and Deploy Date Image
+name: Generate and Deploy Date Image v2
 
 on:
   schedule:
@@ -34,32 +34,10 @@ jobs:
           # Move your generated image to public folder
           # mv date-image.png public/date-image.png
           
-      - name: Create Netlify config
+      - name: Rewrite lastest commit (avoid flooding commit history)
         run: |
-          cat > netlify.toml << EOF
-          [build]
-            publish = "public"
-            
-          [[redirects]]
-            from = "/date-badge.png"
-            to = "/date-image.png"
-            status = 200
-            
-          [[headers]]
-            for = "/date-image.png"
-            [headers.values]
-              Cache-Control = "public, max-age=3600"
-          EOF
-          
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v2.0
-        with:
-          publish-dir: './public'
-          production-branch: main
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message: "Update date: $(date +'%Y-%m-%d %H:%M')"
-          enable-pull-request-comment: false
-          enable-commit-comment: false
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add public/date-image.png
+          git commit --amend --no-edit || echo "No changes to commit"
+          git push --force
