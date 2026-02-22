@@ -9,7 +9,7 @@
 
 - 💬 Ask me about **Self-hosting** ＼(ﾟｰﾟ＼)
 
-> On the right is my ~~Netlify CI/CD-updated~~ Chinese calendar *(pending modifications to avoid overusing free credits...)*
+> On the right is a **live Chinese Calendar** (it's updated via CI/CD >:) )
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
