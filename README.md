@@ -3,7 +3,7 @@
 # Hi! I'm Harry ![cat](./yOCzPNwpMMlFUlfLk8-ezgif.com-crop.webp)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3a5aaf66-f3aa-4dc2-870f-811e49626c77/deploy-status)](https://app.netlify.com/projects/generatedate/deploys)
-<img align="right" src="./public/date-image.png" alt="my-styled-calendar" height="300" width="300"/>
+<img align="right" src="./public/date-image.png" alt="my-styled-calendar" height="300" width="500"/>
 
 - 🌱 I'm currently learning **IaC, CI/CD and event queueing**
 
