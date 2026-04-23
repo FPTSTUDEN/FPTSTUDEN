@@ -18,8 +18,11 @@
 
 <h3 align="left">Languages and Tools:</h3>
 
-![My Skills](https://skillicons.dev/icons?i=gcp,bash,docker,kubernetes,linux,ollama,flask,javascript,sqlite)
+![My Skills](https://skillicons.dev/icons?i=gcp,bash,python,terraform,ansible,docker,kubernetes,linux,githubactions,ollama,flask,discordjs,javascript,typescript,sqlite)
 
+<h3 align="left">Badges:</h3>
+
+<img align="left" src="./public/badgetf.png" alt="my-styled-calendar" height="100" width="100"/>
 <!--
 **FPTSTUDEN/FPTSTUDEN** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
