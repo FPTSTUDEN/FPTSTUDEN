@@ -38,5 +38,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           workingDirectory: ./airport-welcomer
           command: deploy
-          # 2. Add this line to force pnpm usage
-          packageManager: pnpm
+          packageManager: npm
