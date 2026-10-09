@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'pnpm' # Optional: enables caching for faster installs
+          cache-dependency-path: airport-welcomer/pnpm-lock.yaml
 
       # (Optional) If you need to install dependencies explicitly
       # - name: Install dependencies
