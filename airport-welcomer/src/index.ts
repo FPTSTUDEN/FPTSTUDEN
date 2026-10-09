@@ -48,15 +48,15 @@ function renderSvg(svg: string, cf: IncomingRequestCfProperties, now = new Date(
 	const stampPlace = `${arrival.city.toUpperCase()}  ${arrival.countryCode}  ${arrival.country.toUpperCase()}`;
 	const id = crypto.randomUUID().replaceAll("-", "").slice(0, 8).toUpperCase();
 	const replacements: Record<string, string> = {
-		"Immigration control arrival card being printed by a gate printer: entry granted at Hanoi, Vietnam on 07 Oct 2026 at 18:16. Reason for visit: browsing someone's README.": `Immigration control arrival card being printed by a gate printer: entry granted at ${place} on ${arrival.date} at ${arrival.time}. Reason for visit: browsing someone's README.`,
-		"<svg ": `<svg class="${arrival.isDark ? "theme-dark" : "theme-light"}" `,
-		"Hanoi, Vietnam": place, "0007 1018": id, "07 OCT 2026": arrival.date,
-		"HANOI  HAN  VIETNAM": stampPlace, "07 OCT 2026  18:16": `${arrival.date}  ${arrival.time}`,
-		"HAN0710261816": `${arrival.countryCode}${arrival.date.replaceAll(" ", "")}${arrival.time.replace(":", "")}`,
-		"18:16": arrival.time,
+		"Immigration control arrival card being printed by a gate printer: entry granted at Hanoi, Vietnam on 07 Oct 2026 at 18:16. Reason for visit: browsing someone's README.": `Immigration control arrival card being printed by a gate printer: entry granted at ${xmlEscape(place)} on ${xmlEscape(arrival.date)} at ${xmlEscape(arrival.time)}. Reason for visit: browsing someone's README.`,
+		"Hanoi, Vietnam": xmlEscape(place), "0007 1018": id, "07 OCT 2026": xmlEscape(arrival.date),
+		"HANOI  HAN  VIETNAM": xmlEscape(stampPlace), "07 OCT 2026  18:16": `${xmlEscape(arrival.date)}  ${xmlEscape(arrival.time)}`,
+		"HAN0710261816": xmlEscape(`${arrival.countryCode}${arrival.date.replaceAll(" ", "")}${arrival.time.replace(":", "")}`),
+		"18:16": xmlEscape(arrival.time),
 	};
-	return Object.entries(replacements).reduce((result, [from, to]) => result.replaceAll(from, xmlEscape(to)), svg)
-		.replace("@media (prefers-color-scheme:dark)", arrival.isDark ? "@media all" : "@media not all");
+	let rendered = `<svg class="${arrival.isDark ? "theme-dark" : "theme-light"}" ` + svg.slice(5);
+	for (const [from, to] of Object.entries(replacements)) rendered = rendered.replaceAll(from, to);
+	return rendered.replace("@media (prefers-color-scheme:dark)", arrival.isDark ? "@media all" : "@media not all");
 }
 
 export { formatArrival, renderSvg };
