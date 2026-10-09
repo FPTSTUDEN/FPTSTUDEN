@@ -17,20 +17,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 1. Add this step to install pnpm
       - uses: pnpm/action-setup@v4
         with:
-          version: 9 # or your preferred version
+          version: 9
 
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm' # Optional: enables caching for faster installs
+          cache: 'pnpm'
           cache-dependency-path: airport-welcomer/pnpm-lock.yaml
 
-      # (Optional) If you need to install dependencies explicitly
-      # - name: Install dependencies
-      #   run: pnpm install
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Deploy with Wrangler
         uses: cloudflare/wrangler-action@v3
@@ -38,4 +36,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           workingDirectory: ./airport-welcomer
           command: deploy
-          packageManager: npm
+          packageManager: pnpm
