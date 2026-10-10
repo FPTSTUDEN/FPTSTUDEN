@@ -13,7 +13,7 @@
 <div align="center">
 
 <!-- <img src="https://placehold.co/800x100/101827/9CCBFA?text=INTERNATIONAL+ARRIVALS+%2F+WELCOME" alt="International arrivals display" width="100%"/> -->
-<img src="./airport-welcomer/public/arrivals.svg" alt="International arrivals display" width="100%"/>
+<img src="./airport-welcomer/public/welcome.svg" alt="International arrivals display" width="100%"/>
 
 </div>
 
@@ -23,7 +23,7 @@
 <tr>
 <td width="150" valign="top" align="center">
 
-<img src="https://placehold.co/140x180/182438/F2C879?text=OFFICER%0AWELCOME" alt="Immigration officer — welcoming expression" width="140"/>
+<img src="./public/bust-view.png" alt="Immigration officer — welcoming expression" width="140"/>
 
 **OFFICER ON DUTY**
 
@@ -32,14 +32,14 @@
 
 ### "Welcome, traveler."
 
-Good day, visitor from **{{city}}, {{country}}**.
 
 <!-- DYNAMIC SVG SPEECH BUBBLE -->
 <!-- Replace this placeholder with /banner/speech-bubble.svg -->
 
-<img src="https://placehold.co/480x110/E8EDF3/182438?text=Your+destination%3A+Harry%27s+GitHub+Profile&font=roboto" alt="Dynamic destination introduction speech bubble" width="100%"/>
+<!-- <img src="https://placehold.co/480x110/E8EDF3/182438?text=Your+destination%3A+Harry%27s+GitHub+Profile&font=roboto" alt="Dynamic destination introduction speech bubble" width="100%"/> -->
+<img src="./airport-welcomer/public/speech-bubble.svg" alt="Dynamic destination introduction speech bubble" width="100%"/>
 
-Your arrival has been registered. The local time at your point of origin is **{{local_time}}**.
+<!-- Your arrival has been registered. The local time at your point of origin is **{{local_time}}**. -->
 
 May I ask the purpose of your visit?
 
@@ -48,6 +48,8 @@ May I ask the purpose of your visit?
 </td>
 </tr>
 </table>
+
+<img src="./airport-welcomer/public/arrivals.svg" alt="International arrivals display" width="100%"/>
 
 ---
 
@@ -59,7 +61,7 @@ May I ask the purpose of your visit?
 <tr>
 <td width="150" valign="top" align="center">
 
-<img src="https://placehold.co/140x180/182438/F2C879?text=OFFICER%0AAPPROVED" alt="Immigration officer holding an approval stamp" width="140"/>
+<img src="./public/with-stamp.png" alt="Immigration officer holding an approval stamp" width="140"/>
 
 **IMMIGRATION OFFICER**
 
@@ -76,7 +78,7 @@ Following routine administrative review, entry to this profile is hereby authori
 
 <!-- <img src="https://placehold.co/360x190/F1E8D4/27374D?text=ARRIVAL+CARD%0A--------------------%0AORIGIN%3A+%7B%7Bcity%7D%7D%0APURPOSE%3A+PROFESSIONAL+CURIOSITY%0ASTATUS%3A+APPROVED&font=roboto" alt="Approved visitor arrival card" width="360"/> -->
 
-<img src="./airport-welcomer/public/readme-immigration-printer.svg" alt="Approved visitor arrival card" width="360"/>
+<img src="./airport-welcomer/public/readme-immigration-printer.svg" alt="Approved visitor arrival card" width="480"/>
 
 <!-- APPROVAL STAMP ASSET: /assets/stamp-approved.svg -->
 
@@ -98,7 +100,7 @@ Please retain your arrival card for the duration of your visit. It has no legal 
 <tr>
 <td width="150" valign="top" align="center">
 
-<img src="https://placehold.co/140x180/182438/F2C879?text=OFFICER%0AGUIDE" alt="Immigration officer pointing toward the directory" width="140"/>
+<img src="./public/reading.png" alt="Immigration officer pointing toward the directory" width="140"/>
 
 **INFORMATION DESK**
 
@@ -136,7 +138,7 @@ Please note that some exhibits remain under construction. This is not grounds fo
 <tr>
 <td width="150" valign="top" align="center">
 
-<img src="https://placehold.co/140x180/182438/F2C879?text=OFFICER%0AWAVE" alt="Immigration officer waving goodbye" width="140"/>
+<img src="./public/bust-view.png" alt="Immigration officer waving goodbye" width="140"/>
 
 **HAVE A NICE JOURNEY**
 
