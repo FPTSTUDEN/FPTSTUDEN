@@ -22,7 +22,8 @@
 
 <h3 align="left">Badges:</h3>
 
-<img align="left" src="./public/badgetf.png" alt="my-styled-calendar" height="100" width="100"/>
+<img align="left" src="https://cdn.qwiklabs.com/KcMuK0okDaoPDIVlKXW1JXuVL0%2BaaF%2B4jU5EV%2Fp1T1w%3D" alt="my-styled-calendar" height="100" width="100"/>
+
 <!--
 **FPTSTUDEN/FPTSTUDEN** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
