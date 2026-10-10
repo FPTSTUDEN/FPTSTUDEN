@@ -11,7 +11,8 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
-const SVG_PATH = "/readme-immigration-printer.svg";
+const DEFAULT_SVG_PATH = "/readme-immigration-printer.svg";
+const SVG_PATHS = new Set([DEFAULT_SVG_PATH, "/arrivals.svg", "/speech-bubble.svg"]);
 const FALLBACK_TIME_ZONE = "UTC";
 
 function xmlEscape(value: string): string {
@@ -59,13 +60,39 @@ function renderSvg(svg: string, cf: IncomingRequestCfProperties, now = new Date(
 	return rendered.replace("@media (prefers-color-scheme:dark)", arrival.isDark ? "@media all" : "@media not all");
 }
 
-export { formatArrival, renderSvg };
+function renderLocalizedSvg(svg: string, path: string, cf: IncomingRequestCfProperties, now = new Date()): string {
+	if (path === DEFAULT_SVG_PATH) return renderSvg(svg, cf, now);
+
+	const arrival = formatArrival(cf, now);
+	const place = `${arrival.city}, ${arrival.country}`;
+	const localTime = new Intl.DateTimeFormat("en-US", {
+		timeZone: cf.timezone ?? FALLBACK_TIME_ZONE,
+		hour: "numeric", minute: "2-digit", hour12: true,
+	}).format(now);
+	const replacements: Record<string, string> = path === "/speech-bubble.svg"
+		? {
+			"Hanoi, Vietnam": xmlEscape(place),
+			"6:16 p.m.": xmlEscape(localTime),
+		}
+		: {
+			"Arrivals": "Arrivals", "Check-in": "Check-in", "Transfers": "Transfers",
+			"Baggage": "Baggage", "claim": "claim", "Passport": "Passport", "control": "control",
+			"09:20": xmlEscape(localTime), "AMSTERDAM": xmlEscape(arrival.city.toUpperCase()),
+		};
+	let rendered = `<svg class="${arrival.isDark ? "theme-dark" : "theme-light"}" ` + svg.slice(5);
+	for (const [from, to] of Object.entries(replacements)) rendered = rendered.replaceAll(from, to);
+	return rendered;
+}
+
+export { formatArrival, renderSvg, renderLocalizedSvg };
 
 export default {
 	async fetch(request, env): Promise<Response> {
-		const asset = await env.ASSETS.fetch(new URL(SVG_PATH, request.url));
+		const path = new URL(request.url).pathname;
+		const assetPath = SVG_PATHS.has(path) ? path : DEFAULT_SVG_PATH;
+		const asset = await env.ASSETS.fetch(new URL(assetPath, request.url));
 		if (!asset.ok) return asset;
-		return new Response(renderSvg(await asset.text(), request.cf as IncomingRequestCfProperties ?? {} as IncomingRequestCfProperties), {
+		return new Response(renderLocalizedSvg(await asset.text(), assetPath, request.cf as IncomingRequestCfProperties ?? {} as IncomingRequestCfProperties), {
 			headers: { "content-type": "image/svg+xml; charset=utf-8", "cache-control": "no-store" },
 		});
 	},

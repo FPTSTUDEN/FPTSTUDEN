@@ -5,7 +5,7 @@ import {
 	SELF,
 } from "cloudflare:test";
 import { describe, it, expect } from "vitest";
-import worker, { formatArrival, renderSvg } from "../src/index";
+import worker, { formatArrival, renderLocalizedSvg, renderSvg } from "../src/index";
 
 // For now, you'll need to do something like this to get a correctly-typed
 // `Request` to pass to `worker.fetch()`.
@@ -24,6 +24,22 @@ describe("localized arrival SVG", () => {
 		expect(first).toContain("Paris, France");
 		expect(first).toContain("@media not all");
 		expect(first).not.toBe(second);
+	});
+});
+
+describe("additional localized SVGs", () => {
+	it("localizes the speech bubble", () => {
+		const source = "<svg><text>Good day, visitor from Hanoi, Vietnam. The local time at your point of origin is 6:16 p.m.</text></svg>";
+		const rendered = renderLocalizedSvg(source, "/speech-bubble.svg", { city: "Tokyo", country: "JP", timezone: "Asia/Tokyo" }, new Date("2026-10-09T09:16:00Z"));
+		expect(rendered).toContain("Tokyo, Japan");
+		expect(rendered).toContain("6:16 PM");
+	});
+
+	it("localizes the arrivals board", () => {
+		const source = "<svg>Arrivals 09:20 AMSTERDAM</svg>";
+		const rendered = renderLocalizedSvg(source, "/arrivals.svg", { city: "Tokyo", country: "JP", timezone: "Asia/Tokyo" }, new Date("2026-10-09T09:16:00Z"));
+		expect(rendered).toContain("6:16 PM");
+		expect(rendered).toContain("TOKYO");
 	});
 });
 
