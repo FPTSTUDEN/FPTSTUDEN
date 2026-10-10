@@ -21,9 +21,9 @@
 
     <!-- Text lines: add or remove <tspan> rows as needed -->
     <text x="36" y="44" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#2b2b2b">
-      <tspan x="36" dy="0">Welcome. Purpose of visit?</tspan>
-      <tspan x="36" dy="22">Building things in public.</tspan>
-      <tspan x="36" dy="22">Please proceed to the next desk.</tspan>
+      <tspan x="36" dy="0">Good day, visitor from Hanoi, Vietnam.</tspan>
+      <tspan x="36" dy="22">Your arrival has been registered.</tspan>
+      <tspan x="36" dy="22">The local time at your point of origin is 6:16 p.m.</tspan>
     </text>
   </g>
 </svg>
