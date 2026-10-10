@@ -69,19 +69,28 @@ function renderLocalizedSvg(svg: string, path: string, cf: IncomingRequestCfProp
 		timeZone: cf.timezone ?? FALLBACK_TIME_ZONE,
 		hour: "numeric", minute: "2-digit", hour12: true,
 	}).format(now);
-	const replacements: Record<string, string> = path === "/speech-bubble.svg"
-		? {
-			"Hanoi, Vietnam": xmlEscape(place),
-			"6:16 p.m.": xmlEscape(localTime),
-		}
-		: {
-			"Arrivals": "Arrivals", "Check-in": "Check-in", "Transfers": "Transfers",
-			"Baggage": "Baggage", "claim": "claim", "Passport": "Passport", "control": "control",
-			"09:20": xmlEscape(localTime), "AMSTERDAM": xmlEscape(arrival.city.toUpperCase()),
-		};
 	let rendered = `<svg class="${arrival.isDark ? "theme-dark" : "theme-light"}" ` + svg.slice(5);
-	for (const [from, to] of Object.entries(replacements)) rendered = rendered.replaceAll(from, to);
-	return rendered;
+	if (path === "/speech-bubble.svg") {
+		for (const [from, to] of Object.entries({ "Hanoi, Vietnam": place, "6:16 p.m.": localTime })) {
+			rendered = rendered.replaceAll(from, xmlEscape(to));
+		}
+		return rendered;
+	}
+
+	const replaceBoardSlots = (startX: number, value: string, y = "174.4") => {
+		[...value].forEach((character, index) => {
+			const x = startX + index * 18;
+			const pattern = new RegExp(`(<text x="${x.toFixed(1)}" y="${y}">)[^<]*(</text>)`, "g");
+			rendered = rendered.replace(pattern, `$1${xmlEscape(character)}$2`);
+		});
+	};
+	const localTime24 = new Intl.DateTimeFormat("en-GB", {
+		timeZone: cf.timezone ?? FALLBACK_TIME_ZONE, hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+	}).format(now);
+	replaceBoardSlots(45.5, localTime24);
+	rendered = rendered.replace(/(<text x="45\.5" y="174\.4">)[^<]*(<\/text>)/, `$1${xmlEscape(localTime24)}$2`);
+	replaceBoardSlots(172.5, arrival.city.toUpperCase().slice(0, 14));
+	return rendered.replace("AMSTERDAM", xmlEscape(arrival.city.toUpperCase()));
 }
 
 export { formatArrival, renderSvg, renderLocalizedSvg };

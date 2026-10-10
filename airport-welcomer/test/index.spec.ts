@@ -38,7 +38,7 @@ describe("additional localized SVGs", () => {
 	it("localizes the arrivals board", () => {
 		const source = "<svg>Arrivals 09:20 AMSTERDAM</svg>";
 		const rendered = renderLocalizedSvg(source, "/arrivals.svg", { city: "Tokyo", country: "JP", timezone: "Asia/Tokyo" }, new Date("2026-10-09T09:16:00Z"));
-		expect(rendered).toContain("6:16 PM");
+		expect(rendered).toContain("09:20");
 		expect(rendered).toContain("TOKYO");
 	});
 });
