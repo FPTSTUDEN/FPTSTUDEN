@@ -13,7 +13,7 @@
 <div align="center">
 
 <!-- <img src="https://placehold.co/800x100/101827/9CCBFA?text=INTERNATIONAL+ARRIVALS+%2F+WELCOME" alt="International arrivals display" width="100%"/> -->
-<img src="./airport-welcomer/public/welcome.svg" alt="International arrivals display" width="100%"/>
+<img src="./public/welcome.svg" alt="International arrivals display" width="100%"/>
 
 </div>
 
@@ -30,7 +30,7 @@
 </td>
 <td valign="top">
 
-### "Welcome, traveler."
+<!-- ### "Welcome, traveler." -->
 
 
 <!-- DYNAMIC SVG SPEECH BUBBLE -->
@@ -53,7 +53,7 @@ May I ask the purpose of your visit?
 
 ---
 
-## 02 — Entry Approved
+## Immigration counter
 
 <!-- AIRPORT ASSET: immigration-counter.svg -->
 
@@ -68,7 +68,7 @@ May I ask the purpose of your visit?
 </td>
 <td valign="top">
 
-### "Your documents are in order."
+### Your documents are in order.
 
 Your declared purpose of visit has been classified as **professional curiosity**.
 
@@ -92,7 +92,7 @@ Please retain your arrival card for the duration of your visit. It has no legal 
 
 ---
 
-## 03 — Destination Briefing
+## Destination Briefing
 
 <!-- AIRPORT ASSET: directory-board.svg -->
 
@@ -107,7 +107,7 @@ Please retain your arrival card for the duration of your visit. It has no legal 
 </td>
 <td valign="top">
 
-### "Allow me to introduce your destination."
+### Allow me to introduce your destination.
 
 This profile contains a selection of technical projects, infrastructure experiments, and ongoing investigations into the inner workings of computers.
 
@@ -120,7 +120,7 @@ This profile contains a selection of technical projects, infrastructure experime
 
 <!-- AIRPORT ASSET: /assets/directory-board.svg -->
 
-<img src="https://placehold.co/700x120/182438/9CCBFA?text=A+%2F+PROJECTS++++B+%2F+INFRASTRUCTURE++++C+%2F+RESEARCH++++D+%2F+LEARNING" alt="Airport-style profile directory" width="100%"/>
+<img src="./public/directory-board.svg" alt="Airport-style profile directory" width="100%"/>
 
 Please note that some exhibits remain under construction. This is not grounds for a refund.
 
@@ -130,7 +130,7 @@ Please note that some exhibits remain under construction. This is not grounds fo
 
 ---
 
-## 04 — Final Clearance
+## Clearance
 
 <!-- AIRPORT ASSET: departure-gate.svg -->
 
@@ -145,7 +145,7 @@ Please note that some exhibits remain under construction. This is not grounds fo
 </td>
 <td valign="top">
 
-### "You are free to proceed."
+### You are free to proceed.
 
 Your entry has been approved. You may now explore the profile at your own discretion.
 
@@ -153,7 +153,7 @@ We kindly remind you that curiosity is not subject to customs duty, and there is
 
 <!-- AIRPORT ASSET: /assets/gate-open.svg -->
 
-<img src="https://placehold.co/700x100/101827/9CCBFA?text=GATE+OPEN+%E2%80%94+PROCEED+TO+PROFILE" alt="Open airport gate indicating permission to proceed" width="100%"/>
+<img src="./public/gate-open.svg" alt="Open airport gate indicating permission to proceed" width="100%"/>
 
 Thank you for choosing Harry International.
 
