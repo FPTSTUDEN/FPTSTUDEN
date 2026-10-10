@@ -1,91 +1,176 @@
-I'd make each dialogue stage feel like a different part of an actual airport immigration process. The officer stays as the main character, while small props, interface elements, and background details change to reinforce what she's saying.
+# ✈️ Welcome to My Terminal
 
-## Visual storyboard: from arrival to profile tour
+> **HARRY INTERNATIONAL — IMMIGRATION SERVICES**
+>
+> *Your curiosity is welcome. Your visit is now on record.*
 
-[Resident Card (ARC) Application at Immigration Office | Digital Nomad Korea | Korea Visa Guide | Kim Ninja](https://images.openai.com/static-rsc-4/bb0vMYmmOY1MTq8UK-BUDtI89beAqpzvtj0X4F-hbzIAjMyU568Cp_nFQqFzShhrDaREExX8rTEkN8sdtrRKZDPrMAVnJpWaMtB2mvzPDRWBN_fkiHSu-i_NWAMa5ZIuXjksSaZUS9io8kligKR4jcBVUID1ImXF0xiPgwWj2bA?purpose=inline)
+---
 
-### 01 — Arrival detected
+## 01 — Arrival Detected
 
-WELCOME
+<!-- AIRPORT ASSET: arrivals-terminal.svg -->
 
-Dialogue: “Good day. Welcome, visitor from , .”
+<div align="center">
 
-Visual elements
+<img src="https://placehold.co/800x100/101827/9CCBFA?text=INTERNATIONAL+ARRIVALS+%2F+WELCOME" alt="International arrivals display" width="100%"/>
 
-- Officer giving a small welcoming smile.
-- Airport arrivals sign with a plane icon.
-- Digital destination display populated with the visitor's city.
-- Small sun/moon icon reflecting their local time.
+</div>
 
-Motion: a little head turn toward the viewer, as if she's just noticed someone approaching.
+<!-- OFFICER AVATAR: /assets/officer/welcome.svg -->
 
-[Депортация из Турции: за что депортируют и как избежать - Relokant.online](https://images.openai.com/static-rsc-4/nHMVaWaSVZNTMDyrmJVdOpo0k7ANU02hKN3PSnSU6eKX1Pd85q6x0cM9J5JjMTjgTj6-ga9Bn-YHgi1pUmOZWvKAP7spG3xgfsRAxzXVAIIWCPYGCX3F74X_gDYt9b5Y4FcAaq1pxoVwu36ILxq17W18cH6Me8U49V_QKL8S-rw?purpose=inline)
+<table>
+<tr>
+<td width="150" valign="top" align="center">
 
-### 02 — Arrival card review
+<img src="https://placehold.co/140x180/182438/F2C879?text=OFFICER%0AWELCOME" alt="Immigration officer — welcoming expression" width="140"/>
 
-DOCUMENTS
+**OFFICER ON DUTY**
 
-Dialogue: “Your arrival card has been received and is currently under review.”
+</td>
+<td valign="top">
 
-Visual elements
+### "Welcome, traveler."
 
-- A physical arrival card with a tiny airplane stamp.
-- Printed fields for origin, local time, and destination.
-- Officer looking down at the card with reading glasses.
-- A small queue number or document reference.
+Good day, visitor from **{{city}}, {{country}}**.
 
-Motion: she picks up the card, reads it, then glances back at the visitor.
+<!-- DYNAMIC SVG SPEECH BUBBLE -->
+<!-- Replace this placeholder with /banner/speech-bubble.svg -->
 
-[Costa Rica Visa Requirements 2026](https://images.openai.com/static-rsc-4/SIrU10GW1usXcsYDpcn70w_t_IKaz-s3vVTBfJbXwUQYaZ_9lFsYduK8eu4DNQkTVJSgFvm75L9xak4dQN1PSWnDD4pWbNbdqWW6Ky21EDHD9xAh9_RPeHTLxUFv9ZulRvkcJh-aDkzWe1jjNbb3VwedugzBgwVvrR9AXB6lw1Q?purpose=inline)
+<img src="https://placehold.co/480x110/E8EDF3/182438?text=Your+destination%3A+Harry%27s+GitHub+Profile&font=roboto" alt="Dynamic destination introduction speech bubble" width="100%"/>
 
-### 03 — Entry approved
+Your arrival has been registered. The local time at your point of origin is **{{local_time}}**.
 
-CLEARED
+May I ask the purpose of your visit?
 
-Dialogue: “Your declared purpose of visit has been classified as professional curiosity. Entry is hereby granted.”
+*Professional curiosity? Excellent. Please proceed to document verification.*
 
-Visual elements
+</td>
+</tr>
+</table>
 
-- Oversized red APPROVED stamp.
-- Passport opened on the counter.
-- A green clearance indicator.
-- A comically serious reference number: `FORM README-001`.
+---
 
-Motion: stamp comes down with a slight bounce; the approval mark appears with it.
+## 02 — Entry Approved
 
-[入管職員２００人超を異例の緊急増員 不法残留外国人の摘発強化へ : ガールズVIPまとめ](https://images.openai.com/static-rsc-4/rf72caHnCElI4Vg-g027c0a0YyM_OX9on9pPW-cRIChqbqq3zkaix71BuBygDnF1B4AuAyurkyLeAVkSO3Ugl_mSJV3e63TaoAe-DKx8bENr39zaVNShhlJUo575XlB5CLqxWoCyRsfWu-jx3vuTSkqCIOEISpBRjAH1_k6vX3w?purpose=inline)
+<!-- AIRPORT ASSET: immigration-counter.svg -->
 
-### 04 — Destination briefing
+<table>
+<tr>
+<td width="150" valign="top" align="center">
 
-PROFILE GUIDE
+<img src="https://placehold.co/140x180/182438/F2C879?text=OFFICER%0AAPPROVED" alt="Immigration officer holding an approval stamp" width="140"/>
 
-Dialogue: “Allow me to introduce your destination: a collection of technical projects, infrastructure experiments, and ongoing investigations.”
+**IMMIGRATION OFFICER**
 
-Visual elements
+</td>
+<td valign="top">
 
-- Officer gesturing toward a directory board.
-- Three little pictograms: code brackets, cloud infrastructure, and a laboratory flask.
-- A route map with stops labeled `PROJECTS`, `TECH STACK`, and `LEARNING LOG`.
-- A tiny “You are here” marker.
+### "Your documents are in order."
 
-Motion: she turns slightly and points toward the directory, like an airport information attendant.
+Your declared purpose of visit has been classified as **professional curiosity**.
 
-[Breeding City Welcomes you Table Vault - Modern Gaming Hub](https://images.openai.com/static-rsc-4/BBuL_n7wp9w6tsS5ZqTDHpylJlpghG7_AD_9JZuPqAg-vxvK9u61nL_QKJEdonXczTXBF2OIN7xplud6TBkIj5HdT1JR6veuc9WaOnsmB-JmURhuINszN6TQfZPQ2I1tQc1N_DibMuHOZgr8M06EiNRmeCsUSRyG_atKQdnuXpI?purpose=inline)
+Following routine administrative review, entry to this profile is hereby authorized.
 
-### 05 — Final clearance
+<!-- ARRIVAL CARD ASSET: /assets/arrival-card.svg -->
 
-PROCEED
+<img src="https://placehold.co/360x190/F1E8D4/27374D?text=ARRIVAL+CARD%0A--------------------%0AORIGIN%3A+%7B%7Bcity%7D%7D%0APURPOSE%3A+PROFESSIONAL+CURIOSITY%0ASTATUS%3A+APPROVED&font=roboto" alt="Approved visitor arrival card" width="360"/>
 
-Dialogue: “You are now authorized to explore the profile. Please enjoy your stay. Your curiosity is not subject to customs duty.”
+<!-- APPROVAL STAMP ASSET: /assets/stamp-approved.svg -->
 
-Visual elements
+<img src="https://placehold.co/180x48/8B3030/FFFFFF?text=ENTRY+GRANTED" alt="Entry granted approval stamp" width="180"/>
 
-- Officer waving with one hand.
-- An open gate icon or illuminated exit arrow.
-- A tiny boarding pass marked `ADMIT ONE`.
-- A small footer: `THANK YOU FOR YOUR COOPERATION`.
+Please retain your arrival card for the duration of your visit. It has no legal significance whatsoever, but considerable administrative importance.
 
-Motion: a little wave, followed by a subtle blinking arrow pointing toward the README content below.
+</td>
+</tr>
+</table>
+
+---
+
+## 03 — Destination Briefing
+
+<!-- AIRPORT ASSET: directory-board.svg -->
+
+<table>
+<tr>
+<td width="150" valign="top" align="center">
+
+<img src="https://placehold.co/140x180/182438/F2C879?text=OFFICER%0AGUIDE" alt="Immigration officer pointing toward the directory" width="140"/>
+
+**INFORMATION DESK**
+
+</td>
+<td valign="top">
+
+### "Allow me to introduce your destination."
+
+This profile contains a selection of technical projects, infrastructure experiments, and ongoing investigations into the inner workings of computers.
+
+| Terminal | Exhibits |
+|---|---|
+| **A — Projects** | Software, applications, and things I've built |
+| **B — Infrastructure** | Cloud, DevOps, containers, and self-hosting |
+| **C — Research** | AI, automation, and technical rabbit holes |
+| **D — Learning** | Skills acquired, lessons learned, and unfinished business |
+
+<!-- AIRPORT ASSET: /assets/directory-board.svg -->
+
+<img src="https://placehold.co/700x120/182438/9CCBFA?text=A+%2F+PROJECTS++++B+%2F+INFRASTRUCTURE++++C+%2F+RESEARCH++++D+%2F+LEARNING" alt="Airport-style profile directory" width="100%"/>
+
+Please note that some exhibits remain under construction. This is not grounds for a refund.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 04 — Final Clearance
+
+<!-- AIRPORT ASSET: departure-gate.svg -->
+
+<table>
+<tr>
+<td width="150" valign="top" align="center">
+
+<img src="https://placehold.co/140x180/182438/F2C879?text=OFFICER%0AWAVE" alt="Immigration officer waving goodbye" width="140"/>
+
+**HAVE A NICE JOURNEY**
+
+</td>
+<td valign="top">
+
+### "You are free to proceed."
+
+Your entry has been approved. You may now explore the profile at your own discretion.
+
+We kindly remind you that curiosity is not subject to customs duty, and there is no penalty for staying longer than anticipated.
+
+<!-- AIRPORT ASSET: /assets/gate-open.svg -->
+
+<img src="https://placehold.co/700x100/101827/9CCBFA?text=GATE+OPEN+%E2%80%94+PROCEED+TO+PROFILE" alt="Open airport gate indicating permission to proceed" width="100%"/>
+
+Thank you for choosing Harry International.
+
+We wish you a productive visit and a pleasant browsing experience.
+
+**This concludes all mandatory formalities.**
+
+<sub>HARRY INTERNATIONAL · DEPARTMENT OF UNNECESSARY FORMALITIES · EST. SOME TIME AGO</sub>
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+*Your journey ends here. The rabbit hole begins below.*
+
+⬇️ **PLEASE PROCEED TO THE REST OF THE README** ⬇️
+
+</div>
 
 ## Extra UI details that sell the joke
 
