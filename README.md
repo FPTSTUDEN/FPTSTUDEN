@@ -1,10 +1,5 @@
 # ✈️ HARRY INTERNATIONAL AIRPORT
 
-
-> *Your curiosity is welcome. Your visit is now on record.*
-
----
-
 <!-- ## 01 — Arrival Detected -->
 
 <!-- AIRPORT ASSET: arrivals-terminal.svg -->
@@ -20,7 +15,7 @@
 
 <table>
 <tr>
-<td width="150" valign="top" align="center">
+<td valign="top" align="center">
 
 <img src="./public/bust-view.png" alt="Immigration officer — welcoming expression" width="140"/>
 
@@ -36,42 +31,15 @@
 <!-- Replace this placeholder with /banner/speech-bubble.svg -->
 
 <!-- <img src="https://placehold.co/480x110/E8EDF3/182438?text=Your+destination%3A+Harry%27s+GitHub+Profile&font=roboto" alt="Dynamic destination introduction speech bubble" width="100%"/> -->
-<img src="https://airport-welcomer.mrdinhdinh.workers.dev/speech-bubble.svg" alt="Dynamic destination introduction speech bubble" width="100%"/>
 
 <!-- Your arrival has been registered. The local time at your point of origin is **{{local_time}}**. -->
+Welcome to Harry International. 
 
 May I ask the purpose of your visit?
 
-*Professional curiosity? Excellent. Please proceed to document verification.*
+*Professional curiosity? Excellent.*
 
-</td>
-</tr>
-</table>
-
-<img src="./airport-welcomer/public/arrivals.svg" alt="International arrivals display" width="100%"/>
-
----
-
-## Immigration counter
-
-<!-- AIRPORT ASSET: immigration-counter.svg -->
-
-<table>
-<tr>
-<td width="150" valign="top" align="center">
-
-<img src="./public/with-stamp.png" alt="Immigration officer holding an approval stamp" width="140"/>
-
-**IMMIGRATION OFFICER**
-
-</td>
-<td valign="top">
-
-### Your documents are in order.
-
-Your declared purpose of visit has been classified as **professional curiosity**.
-
-Following routine administrative review, entry to this profile is hereby authorized.
+Please take your arrival card.
 
 <!-- ARRIVAL CARD ASSET: /assets/arrival-card.svg -->
 
@@ -79,25 +47,22 @@ Following routine administrative review, entry to this profile is hereby authori
 
 <img src="https://airport-welcomer.mrdinhdinh.workers.dev/readme-immigration-printer.svg" alt="Approved visitor arrival card" width="480"/>
 
-<!-- APPROVAL STAMP ASSET: /assets/stamp-approved.svg -->
-
-<img src="https://placehold.co/180x48/8B3030/FFFFFF?text=ENTRY+GRANTED" alt="Entry granted approval stamp" width="180"/>
-
-Please retain your arrival card for the duration of your visit. It has no legal significance whatsoever, but considerable administrative importance.
+Following routine administrative review, entry to this profile is hereby authorized.
 
 </td>
 </tr>
 </table>
 
+
 ---
 
-## Destination Briefing
+<!-- ## Destination Briefing -->
 
 <!-- AIRPORT ASSET: directory-board.svg -->
 
 <table>
 <tr>
-<td width="150" valign="top" align="center">
+<td valign="top" align="center">
 
 <img src="./public/reading.png" alt="Immigration officer pointing toward the directory" width="140"/>
 
@@ -121,7 +86,7 @@ This profile contains a selection of technical projects, infrastructure experime
 
 <img src="./public/directory-board.svg" alt="Airport-style profile directory" width="100%"/>
 
-Please note that some exhibits remain under construction. This is not grounds for a refund.
+*Please note that some exhibits remain under construction. This is not grounds for a refund.*
 
 </td>
 </tr>
@@ -129,38 +94,33 @@ Please note that some exhibits remain under construction. This is not grounds fo
 
 ---
 
-## Clearance
-
 <!-- AIRPORT ASSET: departure-gate.svg -->
 
 <table>
 <tr>
-<td width="150" valign="top" align="center">
+<td valign="top" align="center">
 
 <img src="./public/bust-view.png" alt="Immigration officer waving goodbye" width="140"/>
 
-**HAVE A NICE JOURNEY**
+**OFFICER ON DUTY**
 
 </td>
 <td valign="top">
 
-### You are free to proceed.
 
-Your entry has been approved. You may now explore the profile at your own discretion.
-
-We kindly remind you that curiosity is not subject to customs duty, and there is no penalty for staying longer than anticipated.
 
 <!-- AIRPORT ASSET: /assets/gate-open.svg -->
 
 <img src="./public/gate-open.svg" alt="Open airport gate indicating permission to proceed" width="100%"/>
 
+### You are free to proceed.
+
 Thank you for choosing Harry International.
 
 We wish you a productive visit and a pleasant browsing experience.
 
-**This concludes all mandatory formalities.**
+*We kindly remind you that curiosity is not subject to customs duty, and there is no penalty for staying longer than anticipated.*
 
-<sub>HARRY INTERNATIONAL · DEPARTMENT OF UNNECESSARY FORMALITIES · EST. SOME TIME AGO</sub>
 
 </td>
 </tr>
@@ -170,7 +130,7 @@ We wish you a productive visit and a pleasant browsing experience.
 
 <div align="center">
 
-*Your journey ends here. The rabbit hole begins below.*
+<sub>HARRY INTERNATIONAL · DEPARTMENT OF UNNECESSARY FORMALITIES · EST. SOME TIME AGO</sub>
 
 ⬇️ **PLEASE PROCEED TO THE REST OF THE PROFILE** ⬇️
 
