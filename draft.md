@@ -37,7 +37,7 @@
 <!-- Replace this placeholder with /banner/speech-bubble.svg -->
 
 <!-- <img src="https://placehold.co/480x110/E8EDF3/182438?text=Your+destination%3A+Harry%27s+GitHub+Profile&font=roboto" alt="Dynamic destination introduction speech bubble" width="100%"/> -->
-<img src="./airport-welcomer/public/speech-bubble.svg" alt="Dynamic destination introduction speech bubble" width="100%"/>
+<img src="https://airport-welcomer.mrdinhdinh.workers.dev/speech-bubble.svg" alt="Dynamic destination introduction speech bubble" width="100%"/>
 
 <!-- Your arrival has been registered. The local time at your point of origin is **{{local_time}}**. -->
 
@@ -78,7 +78,7 @@ Following routine administrative review, entry to this profile is hereby authori
 
 <!-- <img src="https://placehold.co/360x190/F1E8D4/27374D?text=ARRIVAL+CARD%0A--------------------%0AORIGIN%3A+%7B%7Bcity%7D%7D%0APURPOSE%3A+PROFESSIONAL+CURIOSITY%0ASTATUS%3A+APPROVED&font=roboto" alt="Approved visitor arrival card" width="360"/> -->
 
-<img src="./airport-welcomer/public/readme-immigration-printer.svg" alt="Approved visitor arrival card" width="480"/>
+<img src="https://airport-welcomer.mrdinhdinh.workers.dev/readme-immigration-printer.svg" alt="Approved visitor arrival card" width="480"/>
 
 <!-- APPROVAL STAMP ASSET: /assets/stamp-approved.svg -->
 
