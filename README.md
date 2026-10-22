@@ -1,4 +1,4 @@
-<!-- # ✈️ HARRY INTERNATIONAL AIRPORT -->
+<!-- # ✈️ Dinh-Dinh INTERNATIONAL AIRPORT -->
 
 <!-- ## 01 — Arrival Detected -->
 
@@ -12,49 +12,41 @@
 </div>
 
 <!-- OFFICER AVATAR: /assets/officer/welcome.svg -->
+<!-- 
+Welcome to Dinh-Dinh International. Jewel, a vertical complex of projects, experiments, and technical adventures. 
+
+<img src="./jewel-cross-section-waterfall-cat.svg" alt="Jewel" width="600"/> -->
 
 <table>
 <tr>
 <td valign="top" align="center">
 
-<img src="./public/bust-view.png" alt="Immigration officer — welcoming expression" width="140"/>
+<img src="./public/bust-view.png" alt="Immigration officer — welcoming expression" width="120"/>
 
 **OFFICER ON DUTY**
 
 </td>
-<td valign="top">
+<td valign="center">
 
 <!-- ### "Welcome, traveler." -->
 
 
-<!-- DYNAMIC SVG SPEECH BUBBLE -->
-<!-- Replace this placeholder with /banner/speech-bubble.svg -->
-
-<!-- <img src="https://placehold.co/480x110/E8EDF3/182438?text=Your+destination%3A+Harry%27s+GitHub+Profile&font=roboto" alt="Dynamic destination introduction speech bubble" width="100%"/> -->
 
 <!-- Your arrival has been registered. The local time at your point of origin is **{{local_time}}**. -->
-Welcome to Harry International. 
-
-May I ask the purpose of your visit?
-
-*Professional curiosity? Excellent.*
-
-Please take your arrival card.
-
-<!-- ARRIVAL CARD ASSET: /assets/arrival-card.svg -->
-
-<!-- <img src="https://placehold.co/360x190/F1E8D4/27374D?text=ARRIVAL+CARD%0A--------------------%0AORIGIN%3A+%7B%7Bcity%7D%7D%0APURPOSE%3A+PROFESSIONAL+CURIOSITY%0ASTATUS%3A+APPROVED&font=roboto" alt="Approved visitor arrival card" width="360"/> -->
+<img src="./public/welcome-speech.svg" align="center" alt="wel" width="60%"/>
 
 
-Following routine administrative review, entry to this profile is hereby authorized.
 
 </td>
 
-<td>
-<img src="https://airport-welcomer.mrdinhdinh.workers.dev/readme-immigration-printer.svg" alt="Approved visitor arrival card" width="600"/>
-</td>
+
 </tr>
 </table>
+
+<div align="center">
+<img src="./jewel-cross-section-waterfall-cat.svg" align="center" alt="Jewel" width="90%"/>
+</div>
+
 
 
 ---
@@ -74,20 +66,22 @@ Following routine administrative review, entry to this profile is hereby authori
 </td>
 <td valign="top">
 
-### Allow me to introduce your destination.
+### What is this place, you may ask?
 
-This profile contains a selection of technical projects, infrastructure experiments, and ongoing investigations into the inner workings of computers.
+Terminal 404 contains a selection of Dinh-Dinh's technical projects, infra experiments, and investigations into the inner workings of computers. Some exhibits are complete, others are under construction. 
 
-| Terminal | Exhibits |
+If you find something interesting, consider it an authorized detour.
+
+| Floor | Exhibits |
 |---|---|
-| **A — Projects** | Software, applications, and things I've built |
-| **B — Infrastructure** | Cloud, DevOps, containers, and self-hosting |
-| **C — Research** | AI, automation, and technical rabbit holes |
-| **D — Learning** | Skills acquired, lessons learned, and unfinished business |
-
+| **L4 — Museum** | The start of my programming journey |
+| **L3 — Brewery** | Experimental projects |
+| **L2 — Marketplace** | Things I built for fun |
+| **L1 — Arrival** | Where you are now lol |
+| **B1 — Infra** | Cloud, DevOps, containers, and self-hosting |
 <!-- AIRPORT ASSET: /assets/directory-board.svg -->
 
-<img src="./public/directory-board.svg" alt="Airport-style profile directory" width="100%"/>
+<!-- <img src="./public/directory-board.svg" alt="Airport-style profile directory" width="100%"/> -->
 
 *Please note that some exhibits remain under construction. This is not grounds for a refund.*
 
@@ -118,7 +112,7 @@ This profile contains a selection of technical projects, infrastructure experime
 
 ### You are free to proceed.
 
-Thank you for choosing Harry International.
+Thank you for choosing Dinh-Dinh International.
 
 We wish you a productive visit and a pleasant browsing experience.
 
@@ -133,7 +127,7 @@ We wish you a productive visit and a pleasant browsing experience.
 
 <div align="center">
 
-<sub>HARRY INTERNATIONAL · DEPARTMENT OF UNNECESSARY FORMALITIES · EST. SOME TIME AGO</sub>
+<sub>Dinh-Dinh INTERNATIONAL · DEPARTMENT OF UNNECESSARY FORMALITIES · EST. SOME TIME AGO</sub>
 
 ⬇️ **PLEASE PROCEED TO THE REST OF THE PROFILE** ⬇️
 
