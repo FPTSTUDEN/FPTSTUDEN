@@ -17,43 +17,7 @@ Welcome to Dinh-Dinh International. Jewel, a vertical complex of projects, exper
 
 <img src="./jewel-cross-section-waterfall-cat.svg" alt="Jewel" width="600"/> -->
 
-<table>
-<tr>
-<td valign="top" align="center">
-
-<img src="./public/bust-view.png" alt="Immigration officer — welcoming expression" width="120"/>
-
-**OFFICER ON DUTY**
-
-</td>
-<td valign="center">
-
-<!-- ### "Welcome, traveler." -->
-
-
-
-<!-- Your arrival has been registered. The local time at your point of origin is **{{local_time}}**. -->
-<img src="./public/welcome-speech.svg" align="center" alt="wel" width="60%"/>
-
-
-
-</td>
-
-
-</tr>
-</table>
-
-<div align="center">
-<img src="./jewel-cross-section-waterfall-cat.svg" align="center" alt="Jewel" width="90%"/>
-</div>
-
-
-
----
-
-<!-- ## Destination Briefing -->
-
-<!-- AIRPORT ASSET: directory-board.svg -->
+<table> <tr> <!-- LEFT: staff placeholders. Swap each src for your own character image. --> <td width="150" valign="top" align="center"> <img src="./public/staff.png" width="150" alt="Immigration officer (placeholder)">  </td> <!-- RIGHT: arrivals hall --> <td valign="top" align="center"> <img src="arrivals-sign.svg" width="600" alt="International Arrivals"> <br> <img src="welcome-message.svg" width="600" alt="Welcome to Harry International"> <br> <img src="traveler-mail.svg" width="600" alt="Traveler mail: recent messages from visitors"> <br> <a href="https://github.com/USERNAME/USERNAME/issues/new?title=%5Bhello%5D+Hello+from+a+traveler&body=Name%3A+%0ACity%3A+%0A"><img src="btn-hello.svg" width="296" alt="Say hello"></a> <a href="https://github.com/USERNAME/USERNAME/issues/new?title=%5Bmessage%5D+&body=Name%3A+%0ACity%3A+%0A%0AMessage%3A+%0A"><img src="btn-message.svg" width="296" alt="Write a message"></a> </td> </tr> </table>
 
 <table>
 <tr>
