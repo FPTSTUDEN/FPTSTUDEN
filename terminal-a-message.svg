@@ -19,7 +19,7 @@
     <circle cx="42" cy="35" r="3.5" fill="#FFC82C"/>
     <text class="eyebrow sans" x="52" y="39">NOW BOARDING</text>
     <!-- headline -->
-    <text class="h sans" x="28" y="82">Welcome to <tspan fill="#FFC82C">Terminal A</tspan></text>
+    <text class="h sans" x="28" y="82">Also check out <tspan fill="#FFC82C">Terminal A</tspan></text>
     <text class="p sans" x="28" y="104">This is where the projects live. Every gate is a repo: pick</text>
     <text class="p sans" x="28" y="123">one, check its status, and board when you're ready.</text>
     <!-- gate tag -->
