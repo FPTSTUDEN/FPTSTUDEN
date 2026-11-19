@@ -16,44 +16,18 @@
 Welcome to Dinh-Dinh International. Jewel, a vertical complex of projects, experiments, and technical adventures. 
 
 <img src="./jewel-cross-section-waterfall-cat.svg" alt="Jewel" width="600"/> -->
-
-<table>
-<tr>
-<td valign="top" align="center">
-
-<img src="./public/bust-view.png" alt="Immigration officer — welcoming expression" width="120"/>
-
-**OFFICER ON DUTY**
-
-</td>
-<td valign="center">
-
-<!-- ### "Welcome, traveler." -->
+<!-- <img src="welcome-message.svg" width="600" alt="Welcome to Harry International">  -->
+<!-- <img src="post-office-sign.svg" width="600" alt="Post Office: traveler mail"> -->
+<table> <tr> <!-- LEFT: staff placeholders. Swap each src for your own character image. --> <td width="150" valign="top" align="center"> <img src="./public/staff.png" width="150" alt="Immigration officer (placeholder)">  </td> <!-- RIGHT: arrivals sign, welcome, post office (inbox + buttons) --> <td valign="top" align="center"> <img src="welcome-message.svg" width="600" alt="Welcome to Harry International">  <br> <img src="traveler-mail.svg" width="600" alt="Traveler mail inbox: recent messages from visitors"> <br> <a href="https://github.com/USERNAME/USERNAME/issues/new?title=%5Bhello%5D+Hello+from+a+traveler&body=Name%3A+%0ACity%3A+%0A"><img src="btn-hello.svg" width="296" alt="Say hello"></a> <a href="https://github.com/USERNAME/USERNAME/issues/new?title=%5Bmessage%5D+&body=Name%3A+%0ACity%3A+%0A%0AMessage%3A+%0A"><img src="btn-message.svg" width="296" alt="Write a message"></a> </td> </tr> </table>
 
 
+<img src="./sign-gate-a.svg" alt="International arrivals display" width="70%"/>
 
-<!-- Your arrival has been registered. The local time at your point of origin is **{{local_time}}**. -->
-<img src="./public/welcome-speech.svg" align="center" alt="wel" width="60%"/>
-
-
-
-</td>
+<table> <tr> <!-- LEFT: staff placeholders. Swap each src for your own character image. --> <td width="150" valign="top" align="center"> <img src="./public/staff2.png" width="150" alt="Immigration officer 2(placeholder)">  </td> <!-- RIGHT: arrivals sign, welcome, post office (inbox + buttons) --> <td valign="top" align="center"> <img src="terminal-a-message.svg" width="600" alt="Terminal welcome">  <br> <img src="jewel-airport-newcat.svg" width="600" alt="Traveler mail inbox: recent messages from visitors"> </td> </tr> </table>
 
 
-</tr>
-</table>
+<img src="./sign-information.svg" alt="International arrivals display" width="70%"/>
 
-<div align="center">
-<img src="./jewel-cross-section-waterfall-cat.svg" align="center" alt="Jewel" width="90%"/>
-</div>
-
-
-
----
-
-<!-- ## Destination Briefing -->
-
-<!-- AIRPORT ASSET: directory-board.svg -->
 
 <table>
 <tr>
